@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MAD24P03Team2</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recommended_macros">Recommended Macros</string>
+    <string name="lets_go">Let\'s Go!</string>
+    <string name="carbs_amount">23g</string>
+    <string name="sugar_amount">23g</string>
+    <string name="fats_amount">23g</string>
+    <string name="kCal_amount">505\nKcal</string>
+    <string name="carbs">Carbs</string>
+    <string name="sugar">Sugar</string>
+    <string name="fats">Fats</string>
+    <string name="cal">Calories</string>
+    <string name="title_activity_meal_log">MealLogActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+
+    <string-array name="security_qns_array">
+        <item>What is your first pet?</item>
+        <item>What is your favourite sport?</item>
+        <item>What is your child\'s nickname?</item>
+        <item>What is the manufacturer of your first car?</item>
+        <item>What is your eye color?</item>
+        <item>In which city did your parents meet?</item>
+        <item>What is your favourite drink?</item>
+    </string-array>
+
+    <string name="Disclaimer">FoodNav is developed for education purposes only.
+        \nWe are ABSOLUTE NOOBS and this is our first project.
+        \n\nThis application is a reflection of basic knowledge learnt in class as well as
+        exploration of technologies made available.
+
+        \n\nAll data used in FoodNav is fictitious, it is meant to illustrate design concept and application workflow.
+        There is no data validation and verification, data is not encrypted in transit hence users are
+        STRONGLY ENCOURAGED to use fictitious information.
+        \n\nAll information entered by users (excluding photos) will be stored in
+        MS Azure SQL Server till the end of OCTOBER 2024, and there will be no distribution of information.
+
+        \n\nWe appreciate your patience and kind contribution of effort to review and rate our work.
+        We will continue to learn and build better and robust mobile application.
+
+        \n\nThank you!
+    </string>
+</resources>

@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MAD24P03Team2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name = "android:forceDarkAllowed">false</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="circular">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="Theme.MAD24P03Team2" parent="Base.Theme.MAD24P03Team2" />
+
+    <style name="Divider" />
+
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <!-- thickness to be changed -->
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="Divider.Horizontal.Lavender" parent="Divider">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">2dp</item>
+        <!-- thickness to be changed -->
+        <item name="android:background">@color/lavender</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_height">10dp</item> <!-- Adjust the height as needed -->
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_green</item>
+    </style>
+    <style name="Theme.MAD24P03Team2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MAD24P03Team2.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MAD24P03Team2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

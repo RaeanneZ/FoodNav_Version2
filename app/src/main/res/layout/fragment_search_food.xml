@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchForFood">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/textInput"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Lunch"
+                android:textColor="@color/alsoblack"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="What did you have?"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInput">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:context=".MainActivity"
+                android:layout_marginHorizontal="10dp">
+
+                <Button
+                    android:id="@+id/cameraIButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/edit_square"
+                    android:drawableTint="@color/lavender"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/lavender"
+                    android:layout_toRightOf="@id/searchView"
+                    android:layout_alignBottom="@+id/searchView"
+                    android:layout_alignTop="@+id/searchView"/>
+
+                <Button
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/baseline_mic_24"
+                    android:drawableTint="@color/lavender"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/lavender"
+                    android:layout_toRightOf="@id/cameraIButton"
+                    android:layout_alignBottom="@+id/cameraIButton"
+                    android:layout_alignTop="@+id/cameraIButton"/>
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/searchview_background"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Find my food"
+                    android:tooltipText="Enter food name in full or partial" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity2"
+                android:gravity="center">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="activity_horizontal_margin">200dp</dimen>
+
+    <dimen name="gender_margin">470dp</dimen>
+    <dimen name="info_margin">475dp</dimen>
+</resources>

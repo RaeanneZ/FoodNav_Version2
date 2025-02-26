@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:background="@color/beige">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutRecom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ImageViewRecom"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:paddingTop="5dp"
+            android:src="@drawable/recommend"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/green" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Fried Bee Hoon, Plain"
+        android:textColor="@color/black"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/calNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="252"
+        android:textColor="@color/alsoblack"
+        android:textSize="12sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_toEndOf="@+id/calNum"
+        android:fontFamily="@font/inter_regular"
+        android:text=" cal, "
+        android:textColor="@color/alsoblack"
+        android:textSize="12sp"></TextView>
+
+    <TextView
+        android:id="@+id/servingSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_toEndOf="@+id/cal"
+        android:fontFamily="@font/inter_regular"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="12sp"></TextView>
+
+    <TextView
+        android:id="@+id/servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_toEndOf="@+id/servingSize"
+        android:fontFamily="@font/inter_regular"
+        android:text="g"
+        android:textColor="@color/black"
+        android:textSize="12sp"></TextView>
+
+
+</RelativeLayout>
